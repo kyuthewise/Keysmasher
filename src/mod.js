@@ -1,4 +1,4 @@
-export default function Profile() {
+function Profile() {
     return (
       <img
         src="https://i.imgur.com/MK3eW3Am.jpg"
@@ -7,3 +7,11 @@ export default function Profile() {
     )
   }
   
+  export default function Gal(){
+    return(
+      <section>
+        <Profile/>
+        <Profile/>
+      </section>
+    )
+  }

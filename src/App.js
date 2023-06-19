@@ -1,21 +1,21 @@
 import './App.css';
+import {Button, Alert, Breadcrumb} from 'react-bootstrap'
+import 'bootstrap/dist/css/bootstrap.min.css'
 
-function Profile(){
-  return (
-    <img
-      src="https://i.imgur.com/MK3eW3As.jpg"
-      alt="Katherine Johnson"
-    />
-  );
-}
+
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-
-    <Profile/>
+    <Breadcrumb> 
+    <Breadcrumb.Item>bruh</Breadcrumb.Item>
+    <Breadcrumb.Item>bruhA</Breadcrumb.Item>
+    </Breadcrumb>
+    <Alert variant="sucess">This is a button</Alert>
+    <Button>test</Button>
       </header>
     </div>
+    
   );
 }
 
