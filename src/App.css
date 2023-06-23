@@ -1,3 +1,5 @@
+
+
 .App {
   text-align: center;
   background-color: rgb(51, 51, 40);
@@ -5,7 +7,68 @@
 .Conts{
   height: 100vh;
   width: 100vw;
-  overflow: hidden;
+  display: flex;
+  background-color: #b2c0f5;
+  color: #fdfcf7;
+  justify-content: center;
+}
+.letter {
+  display: inline-block;
+  color: rgb(102, 98, 98);
+}
+
+.typed {
+  color: green;
+}
+.textA{
+  height: 70%;
+  width: 1000px;
+  font-size: 1.5rem;
+  font-family: 'Space Mono';
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  list-style-type: none;
+
+}
+.inp{
+  caret-color: rgb(211, 211, 211);
+  outline: none;
+  margin-top: 2rem;
+  border-radius: 10px;
+  border-style: solid;
+  border-color: rgb(206, 206, 206);
+}
+
+.bars {
+display: inline-block;
+white-space: nowrap;
+margin: .3rem;
+}
+.completed {
+  display: inline-block;
+  white-space: nowrap;
+  margin: .3rem;
+  color:rgb(157, 226, 157);
+  }
+.ulize{
+display: flex;
+flex-wrap:wrap;
+border-radius: 2rem;
+
+}
+.completed2 {
+  color: green;
+}
+.incorrect {
+  color: red;
+}
+.dalist{
+  display: flex;
+  flex-direction: row;
+  padding: .3rem;
+  list-style-type: none;
 }
 
 .App-logo {
@@ -32,7 +95,12 @@
   font-size: calc(10px + 2vmin);
   color: white;
 }
-
+.pew{
+  color: rgb(185, 239, 255);
+  height: 2rem;
+  margin-top: 1rem;
+  font-size: 1.2rem
+}
 .App-link {
   color: #61dafb;
 }

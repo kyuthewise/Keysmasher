@@ -1,21 +1,20 @@
+@font-face {
+    font-family: 'Actionman';
+    src: url('./Mods/Bubblegum.ttf') format('truetype');
+    /* Add additional font formats and paths if necessary */
+  }
+
 .cont{
+    
     height: 100vh;
     width: 100vw;
 }
-.nav{
+.page{
+    font-size: 2rem;
+    background-color: #b2c0f5;
+    color: #fdfcf7;
     height: 100%;
     width: 100%;
-}
-.bav{
-    height: 50%;
-    width: 100%;
-}
-.col{
-    height: 50%;
-    width: 100%;
-}
-.cimg{
-    height: 100%;
-    width: 120%;
-    object-fit:cover;
+    font-family: 'Actionman', sans-serif;
+
 }
