@@ -8,21 +8,31 @@
   height: 100vh;
   width: 100vw;
   display: flex;
-  background-color: #b2c0f5;
+  background-color: #363636;
   color: #fdfcf7;
   justify-content: center;
 }
 .letter {
   display: inline-block;
-  color: rgb(102, 98, 98);
+  color: rgb(204, 204, 204);
+  opacity: 40%;
 }
 
 .typed {
-  color: green;
+  opacity: 100%;
+  color: rgb(91, 230, 91);
+}
+.completed2 {
+  opacity: 100%;
+  color: rgb(79, 192, 79);
+}
+.incorrect {
+  opacity: 70%;
+  color: red;
 }
 .textA{
-  height: 70%;
-  width: 1000px;
+  height: 100%;
+  width: 60%;
   font-size: 1.5rem;
   font-family: 'Space Mono';
   display: flex;
@@ -30,8 +40,37 @@
   justify-content: center;
   flex-direction: column;
   list-style-type: none;
+  position: relative;
 
 }
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.7;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.cursor {
+  position: absolute;
+  display: inline-block;
+  text-align: center;
+  width: 2px;
+  top: 10rem;
+  height: 1em;
+  align-self: center;
+  justify-self: center;
+  height: 10%;
+  width: 100%;
+  animation: blink 1s infinite;
+}
+
+
+
 .inp{
   caret-color: rgb(211, 211, 211);
   outline: none;
@@ -58,12 +97,6 @@ display: flex;
 flex-wrap:wrap;
 border-radius: 2rem;
 
-}
-.completed2 {
-  color: green;
-}
-.incorrect {
-  color: red;
 }
 .dalist{
   display: flex;
@@ -97,15 +130,32 @@ border-radius: 2rem;
   color: white;
 }
 .pew{
-  color: rgb(185, 239, 255);
-  height: 2rem;
+  font-family: 'Impact';
+  color: rgb(226, 127, 176);
+  opacity: 76%;
+
+  font-size: 1.4rem;
   margin-top: 1rem;
-  font-size: 1.2rem
+ 
 }
 .App-link {
   color: #61dafb;
 }
-
+.btna{
+  font-weight: bold;
+  background-color: transparent;
+  border: none;
+  text-align: inherit;
+  
+  width: 20;
+  color: rgb(158, 158, 158);
+  font: inherit;
+  border-radius: 0;
+  appearance: none;
+}
+.btna:hover{
+  color: rgb(255, 255, 255);
+}
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
