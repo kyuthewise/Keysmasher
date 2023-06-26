@@ -22,8 +22,6 @@ function App() {
     }
     const typedValue = event.target.value;
     
-    
-    console.log(typedValue)
 
     if (startTime === null) {
       setStartTime(Date.now());
@@ -89,7 +87,7 @@ function App() {
   }, [inputValue]);
 
   const fetchUserData = () => {
-    fetch('https://random-word-api.vercel.app/api?words=30')
+    fetch('https://random-word-api.vercel.app/api?words=6')
       .then((response) => response.json())
       .then((data) => {
         setWords(data);
@@ -119,7 +117,6 @@ const elapsedTime = startTime !== null ? (Date.now() - startTime) / 1000 / 60 : 
 
   
 
-console.log(Date.now() - startTime)
 const decimalMinutes = elapsedTime.toFixed(2);
 const spacecon = words.length / 5;
 const wordCount = (charnum + spacecon) / 5;
@@ -130,8 +127,10 @@ const wpm = Math.ceil((wordCount / decimalMinutes));
 
 
   return (
+    
     <div className="Conts">
       <div className="textA">
+      
       <h2 className='cursor'>start typing...</h2>
       
       {visible && <p className="pew">YOU TYPED {wpm} WPM!</p>}

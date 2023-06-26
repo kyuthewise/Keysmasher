@@ -3,6 +3,8 @@
 .App {
   text-align: center;
   background-color: rgb(51, 51, 40);
+  height: 100vh;
+  width: 100vw;
 }
 .Conts{
   height: 100vh;
@@ -56,11 +58,10 @@
 }
 
 .cursor {
-  position: absolute;
+
   display: inline-block;
   text-align: center;
   width: 2px;
-  top: 10rem;
   height: 1em;
   align-self: center;
   justify-self: center;
@@ -131,7 +132,7 @@ border-radius: 2rem;
 }
 .pew{
   font-family: 'Impact';
-  color: rgb(226, 127, 176);
+  color: rgb(228, 222, 168);
   opacity: 76%;
 
   font-size: 1.4rem;
@@ -143,12 +144,13 @@ border-radius: 2rem;
 }
 .btna{
   font-weight: bold;
+  opacity: 76%;
+  color: rgb(184, 181, 181);
   background-color: transparent;
   border: none;
   text-align: inherit;
   
   width: 20;
-  color: rgb(158, 158, 158);
   font: inherit;
   border-radius: 0;
   appearance: none;
