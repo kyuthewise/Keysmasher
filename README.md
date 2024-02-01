@@ -3,7 +3,8 @@ A simple typewriter project written in vanilla Javascript
 
 ## Features
 
-- **A**: Personalize your experience with customizable user profiles.
+- **API Wordlist**: Pulls random words from an integrated API.
+- **WPM Calculator**: Calculates words per minute based on the selected timeframe.
 
 ## Built With
 - **Javascript**
