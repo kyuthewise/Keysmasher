@@ -7,7 +7,7 @@ A simple typewriter project written in vanilla Javascript
 - **WPM Calculator**: Calculates words per minute based on the selected timeframe.
 
 ## Built With
-- **Javascript**
+- **React.js**
 
 ## Getting Started
 To get started with Keysmasher, clone the repo and install the dependencies.
